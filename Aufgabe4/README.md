@@ -1,3 +1,21 @@
+# Aufgabe 4: Flow in Android
+Vorbereitung: Starte Android Studio und öffne das Projekt Aufgabe4. Nachdem der Gradle-Task durchlaufen ist, führe die App erstmalig aus. 
+## Aufgabe 4.1: MutableStateFlow
+Beim Anlegen eines neuen Tasks ist es nicht möglich, Title und Description einzugeben. 
+Stelle sicher, dass im ViewModel der UI-State des AddEditTaskScreen auf den neuen, eingegebenen Wert aktualisiert wird. 
+## Aufgabe 4.2: Transformation eines cold flow in einen hot flow
+Beim Drehen des Gerätes wird der View-Lifecycle durchlaufen. In der Task-Ansicht der App kommt es dadurch vor, dass die Tasks nach dem Drehen erneut geladen werden. 
+Finde eine Lösung, welches dies verhindert. 
+## Aufgabe 4.3: Combine
+In der View Task Details werden keine Daten dargestellt. 
+Erweitere die Combine-Funktion im TaskDetailViewMode, sodass der ausgewählte Task im UiState mit enthalten ist und dargestellt wird. 
+
+<br/>
+
+---
+
+<br/>
+
 # Android Architecture Blueprints
 <p align="center">
 <img src="https://github.com/googlesamples/android-architecture/wiki/images/aab-logov2.png" alt="Illustration by Virginia Poltrack"/>
