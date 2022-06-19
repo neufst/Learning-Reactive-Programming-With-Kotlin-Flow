@@ -1,14 +1,12 @@
 import kotlin.system.*
 import kotlinx.coroutines.*
-import java.sql.DriverManager.println
 
 fun main() =
     runBlocking<Unit> {
-
         // Einen Mitarbeiter auswählen und einer Bestellung zuweisen
         for(x in 1..3){
-            println (orders.size)
-            async { processOrder() }}
+            async {processOrder()}
+        }
 }
 
 suspend fun selectOrder() = coroutineScope {
@@ -27,8 +25,8 @@ suspend fun processOrder() = coroutineScope {
     assignOrder(employeePromise.await(), orderPromise.await())
 }
 
-fun assignOrder(employee: String, order: Int) {
-    println(employee + " is assigned to " + order)
+fun assignOrder (employee: String, order: Int) {
+    println (employee + " is assigned to " + order);
 }
 
 // --------------
