@@ -1,10 +1,10 @@
-import jdk.internal.net.http.common.Pair
 import kotlin.collections.*
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
 
     fun main() = runBlocking<Unit> {
-        // Hier Lösung implementieren
+        // Hier Lösung implementieren, die die Zwischenschritte beim Tippen herausfiltert
+        simple().collect { println(it) }
     }
 
     fun simple(): Flow<String> = flow {
